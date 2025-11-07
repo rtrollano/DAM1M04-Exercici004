@@ -134,6 +134,7 @@ img {
 
 /* === Navegación principal === */
 .topnav {
+  display: flex;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -170,10 +171,11 @@ img {
 }
 
 .colormenu {
-  color: #0f172a;
+  color:black;
 }
-
-
+.colormenu:hover {
+  color:grey;
+}
 
 
 /*Cuadarados*/
@@ -212,7 +214,7 @@ img {
       box-shadow: 0 2px 5px rgb(12, 189, 124);
       border-radius: 8px;
       text-align: center;
-      color: white
+      color: white;
     }
 
     .box_fran{
@@ -296,10 +298,58 @@ footer {
   }
 }
 
-/* Estils que només s'apliquen a "Mòbil" */
+
+/* === Adaptación móvil === */
 @media (max-width: 768px) {
   body {
-    margin: 3%;
+    margin: 5%;
+  }
+  .autocenter,
+  .imagen,
+  .imagen-estilo,
+  video {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .h2_seccion {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .box,
+  .box_negra,
+  .box_fran,
+  .box_ny {
+    flex: 1 1 100%;
+    margin: 0 auto;
+  }
+
+.enlace{
+  text-align: center;
+  margin-left: 35%;
+} 
+  
+  .boton_now1 {
+    width: 10%;
+    max-width: 300px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 30px;
+    width: auto;
+    margin: 0 auto 10px;
   }
 }
-
