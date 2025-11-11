@@ -298,7 +298,7 @@ footer {
 @media (max-width: 768px) {
   body {
     margin: 5%;
-    background-color: red;
+    background-color: blue;
   }
 .topnav .menu {
   display: flex;
